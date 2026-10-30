@@ -14,15 +14,14 @@ J'ai aussi testé le modèle avec l'ENERGY STAR Score : il monte à 0,84, mais j
 
 ## Notebooks
 
-Ils sont à lancer dans l'ordre, chacun écrit un CSV que le suivant relit.
+Ils sont à lancer dans l'ordre : le premier écrit un CSV que le second relit.
 
 | Notebook | Contenu | Lit | Écrit |
 |---|---|---|---|
-| `01_exploration.ipynb` | Analyse exploratoire, périmètre non résidentiel, relevés fiables, choix des colonnes | `data/2016_Building_Energy_Benchmarking.csv` | `data/batiments_nettoyes.csv` |
-| `02_cible.ipynb` | Choix de la cible, distribution, consommation par type de bâtiment, bâtiments incohérents | `data/batiments_nettoyes.csv` | `data/batiments_cible.csv` |
-| `03_modelisation.ipynb` | Feature engineering, préparation des données, comparaison de 4 modèles, GridSearch, permutation importance | `data/batiments_cible.csv` | — |
+| `01_analyse_exploratoire.ipynb` | Périmètre non résidentiel, relevés fiables, choix des colonnes, choix de la cible, consommation par type de bâtiment, bâtiments incohérents | `data/2016_Building_Energy_Benchmarking.csv` | `data/batiments_cible.csv` |
+| `02_modelisation.ipynb` | Feature engineering, préparation des données, comparaison de 4 modèles, GridSearch, permutation importance | `data/batiments_cible.csv` | — |
 
-Si on modifie un notebook, il faut relancer celui-là et les suivants.
+Si on modifie le premier notebook, il faut aussi relancer le second.
 
 ## Filtres appliqués
 

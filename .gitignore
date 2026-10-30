@@ -4,7 +4,6 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Données intermédiaires (recréées par les notebooks)
-data/batiments_nettoyes.csv
 data/batiments_cible.csv
 
 # Archives et notes personnelles
